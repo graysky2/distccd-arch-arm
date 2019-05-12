@@ -1,4 +1,4 @@
-# distccd-arm
+# distccd-arch-arm
 Provides an Arch ARM client with Systemd services/environment files to make use of [distcc-alarm](https://aur.archlinux.org/packages/distccd-alarm-armv7h/) naively.
 
 ## Dependencie for Arch ARM client
