@@ -5,4 +5,4 @@
 # using the --allow switch.  See the distccd manpage for more info.
 #
 
-DISTCC_ARGS="--allow 127.0.0.1 --allow 192.168.1.0/24 --port 3636 --nice 19 --log-file /tmp/distccd-armv8.log --log-level info"
+DISTCC_ARGS="--allow-private --log-level info --log-file /tmp/distccd-armv8.log --port 3636"
