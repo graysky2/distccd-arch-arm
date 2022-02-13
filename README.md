@@ -13,9 +13,11 @@ Provides an Arch ARM client with Systemd services/environment files to make use 
 * ![logo](http://www.monitorix.org/imgs/archlinux.png "arch logo") Arch ARM users can build from [this](https://aur.archlinux.org/packages/distccd-alarm-armv7h/) package in the [AUR](https://aur.archlinux.org/).
 
 ## Usage examples
-The examples below are a bit wider in scope than this software but can be useful/informative. They detail how to compile using a clean-chroot on Arch ARM distributing out via distcc. For my own use, I build on a RPi4 client with a single x86_64 volunteer. On the volunteer, I export via NFS the space where the build root resides. If this appeals to you, see [this script](https://github.com/graysky2/bin/blob/master/arm-build) I use to automate building. Alternatively, can you use the instructions below.
+The examples below are a bit wider in scope than this software but can be useful/informative. They detail how to compile using a clean-chroot on Arch ARM distributing out via distcc. For my own use, I build on a RPi4 client with a single x86_64 volunteer. On the volunteer, I export via NFS the space where the build root resides. If this appeals to you, see [this script](https://github.com/graysky2/bin/blob/master/arm-build) I use to automate building. Alternatively, can you use the instructions below.  Note that in the script, you'll need to change a few lines to match your setup but it should serve as a good template.
 
 ### Notes
+Support for armv5 and armv6h has been reomved upstream. I will edit this at some point.
+
 I just show armv7h and armv6h here but you can apply these to armv5 and armv8 rather easily.  Just remember:
 * If running a firewall, traffic to the correct tcp port on each box (3633-3636) for armv5-armv8 respectively must be allowed.
 * On a box running armv7, you can build armv6 and armv7.
